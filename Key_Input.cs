@@ -24,6 +24,8 @@ public class Key_Input : MonoBehaviour {
     public static float coordinate_y = 0.0f;
     public static float coordinate_z = 0.0f;
 
+    public static int collider_flag = 0;
+
     public static bool timeflag = false;
     public static bool activeflag = false;
     public static bool allactiveflag = false;
