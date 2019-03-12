@@ -143,26 +143,11 @@ public class Key_Input : MonoBehaviour {
                     motor3.Moveactive2();
                     motor2.Update_angle2();
                     motor1.Update_angle2();
-                    /*purpos_x += add_position_value;
-                    if(purpos_x > limit_x)  //cordinate's limit
-                    {
-                        purpos_x = limit_x;
-                    }
-
-                   kinematics.Compute_Vector();  //Computes a Vector to target position 
-                   motor3.Moveactive2();
-                   motor2.Update_angle2();
-                   motor1.Update_angle2();
-                   */
+                    
                 }
                 if (Input.GetKey(KeyCode.DownArrow))
                 {
-                    /*purpos_x -= add_position_value;
-                    if (purpos_x < 0)  //cordinate's limit
-                    {
-                        purpos_x = 0;
-                    }
-                    */
+                    
                     purpos_x = -1;
                     purpos_y = 0;
                     purpos_z = 0;
@@ -177,14 +162,10 @@ public class Key_Input : MonoBehaviour {
 
                 if (Input.GetKey(KeyCode.LeftArrow))
                 {
-                    /*purpos_y += add_position_value;
-                    if (purpos_y > limit_y)  //cordinate's limit
-                    {
-                        purpos_y = limit_y;
-                    }*/
+                    
                     purpos_x = 0;
-                    purpos_y = 1;
-                    purpos_z = 0;
+                    purpos_y = 0;
+                    purpos_z = 1;
                     kinematics.Compute_Vector();  //Computes a Vector to target position 
                     motor3.Moveactive2();
                     motor2.Update_angle2();
@@ -192,11 +173,19 @@ public class Key_Input : MonoBehaviour {
                 }
                 if (Input.GetKey(KeyCode.RightArrow))
                 {
-                    /*purpos_y -= add_position_value;
-                    if (purpos_y < -limit_y)  //cordinate's limit
-                    {
-                        purpos_y = -limit_y;
-                    }*/
+                   
+                    purpos_x = 0;
+                    purpos_y = 0;
+                    purpos_z = -1;
+                    kinematics.Compute_Vector();  //Computes a Vector to target position 
+                    motor3.Moveactive2();
+                    motor2.Update_angle2();
+                    motor1.Update_angle2();
+                }
+
+                if (Input.GetKey(KeyCode.W))
+                {
+                    
                     purpos_x = 0;
                     purpos_y = -1;
                     purpos_z = 0;
@@ -206,32 +195,11 @@ public class Key_Input : MonoBehaviour {
                     motor1.Update_angle2();
                 }
 
-                if (Input.GetKey(KeyCode.W))
-                {
-                    /*purpos_z += add_position_value;
-                    if (purpos_z > limit_z)  //cordinate's limit
-                    {
-                        purpos_z = limit_z;
-                    }*/
-                    purpos_x = 0;
-                    purpos_y = 0;
-                    purpos_z = 1;
-                    kinematics.Compute_Vector();  //Computes a Vector to target position 
-                    motor3.Moveactive2();
-                    motor2.Update_angle2();
-                    motor1.Update_angle2();
-                }
-
                 if (Input.GetKey(KeyCode.S))
                 {
-                    /*purpos_z -= add_position_value;
-                    if (purpos_z < -limit_z)  //cordinate's limit
-                    {
-                        purpos_z = -limit_z;
-                    }*/
                     purpos_x = 0;
-                    purpos_y = 0;
-                    purpos_z = -1;
+                    purpos_y = 1;
+                    purpos_z = 0;
                     kinematics.Compute_Vector();  //Computes a Vector to target position 
                     motor3.Moveactive2();
                     motor2.Update_angle2();
