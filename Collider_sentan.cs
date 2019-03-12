@@ -23,7 +23,6 @@ public class Collider_sentan : MonoBehaviour {
         {
             mat.color = Color.blue;
             Key_Input.collider_flag += 1;
-            this.GetComponent<Collider>().isTrigger = true;
         } else if(Key_Input.collider_flag == 1)
         {
             Time.timeScale = 0;
