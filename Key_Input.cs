@@ -197,7 +197,6 @@ public class Key_Input : MonoBehaviour {
 
                 if (Input.GetKey(KeyCode.S))
                 {
-                    
                     purpos_x = 0;
                     purpos_y = -1;
                     purpos_z = 0;
