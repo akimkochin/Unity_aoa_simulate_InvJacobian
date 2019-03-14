@@ -17,8 +17,7 @@ public class Collider_sentan : MonoBehaviour {
 	// Update is called once per frame
 	void OnTriggerEnter (Collider t)
     {
-        t.gameObject.GetComponent<Renderer>().material.color = Color.blue;
-        if(tag_name == t.gameObject.tag)
+        if(tag_name == t.gameObject.tag || t.gameObject.tag == "table" )
         {
             print("do nothing");
 
@@ -35,6 +34,14 @@ public class Collider_sentan : MonoBehaviour {
         }
 
         
+        if(t.gameObject.tag == "table")
+        {
+
+        }else
+        {
+            t.gameObject.GetComponent<Renderer>().material.color = Color.blue;
+
+        }
 
     }
     void Update()
