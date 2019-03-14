@@ -34,19 +34,7 @@ public class Collider_sentan : MonoBehaviour {
 
         }
 
-
-        /*
-        print("flag" + Key_Input.collider_flag);
-        if (Key_Input.collider_flag == 0)
-        {
-            mat.color = Color.blue;
-            Key_Input.collider_flag += 1;
-        } else if(Key_Input.collider_flag == 1)
-        {
-            Time.timeScale = 0;
-            print("collider");
-        }
-        */
+        
 
     }
     void Update()
