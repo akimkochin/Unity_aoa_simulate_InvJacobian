@@ -89,13 +89,13 @@ public class Key_Input : MonoBehaviour {
 
                 if (Input.GetKey(KeyCode.UpArrow))
                 {
-                    angle1 += 1;
+                    angle1 -= 1;
                     motor1.Update_angle();
                     print("angle");
                 }
                 if (Input.GetKey(KeyCode.DownArrow))
                 {
-                    angle1 -= 1;
+                    angle1 += 1;
                     motor1.Update_angle();
                 }
 
