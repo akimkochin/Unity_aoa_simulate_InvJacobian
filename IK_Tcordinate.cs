@@ -34,7 +34,7 @@ public class IK_Tcordinate : MonoBehaviour
     float move_x = 0.0f;
     float move_y = 0.0f;
     float move_z = 0.0f;
-    float step = 0.1f;
+    float step = 0.2f;
 
     float beforetheta1 = 0.0f;
     float anglerad = 0.0f;
